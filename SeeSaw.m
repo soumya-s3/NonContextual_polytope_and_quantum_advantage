@@ -23,10 +23,10 @@ ops = sdpsettings('solver','sdpt3','verbose',0)   % Uses 'sdpt3' solver
 
 for iter = 1:10  % increase iteration steps if it doesn't converge
     
-%[V0,D0] = eig(-3*rho0-3*rho1+2*rho2+2*rho3)
 [V0,D0] = eig(-rho0+2*rho1);[V1,D1]=eig(rho0-2*rho2); % choose according to objective state
 %M0 = kron(V0(:,d),V0(:,d)');M1 = kron(V1(:,d),V1(:,d)');
 
+% We need only two measurements as the obtained Noncontextual inequalities involve two of them
 M0 = zeros(d,d); M1 = zeros(d,d); 
 for i = 1:d
    if D0(i,i) > 0
@@ -39,7 +39,6 @@ for i = 1:d
    end
 end
 
-    %objective_state = trace(M0*(-3*rho0_v-3*rho1_v+2*rho2_v+2*rho3_v));
     objective_state = trace(M0*(-rho0_v+2*rho1_v)+M1*(rho0_v-2*rho2_v));  % after each iteration update the measurement operators and optimize over states
     Q1_state=optimize(ConStates,-real(objective_state),ops);
     rho0=value(rho0_v);
