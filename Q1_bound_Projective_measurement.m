@@ -2,6 +2,7 @@
 
 % Scenario : X ={0, 1, 2, 3}; y = {0, 1, 2}; k = {0, 1}  X: Preparation, y: Measurement, k: Outcome choice
 % Equivalence condition on preparation: (1/3)(X0 + X1 + X2) = (1/2)(X0 + X3) 
+% No nontrivial equivalence condition on measurement 
 % The existence of a quantum model for given behaviour p(k/x,y) implies the existence of a moment matrix (Gamma) 
 
 function SRAC = SRACQ1()         
