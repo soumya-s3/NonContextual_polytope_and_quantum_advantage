@@ -1,4 +1,4 @@
-# Construction of NC polytope and their violation in Quantum Theory
+# Construction of polytope and violation of NC facets in Quantum Theory
 (i) For a prepare and measure scenario with both preparation and measurement equivalence obtain the extremal points of both the convex polytopes using [lcon2vert](https://in.mathworks.com/matlabcentral/fileexchange/30892-analyze-n-dimensional-convex-polyhedra) function.
 
 (ii) Obtain the extremal points of Noncontextual polytope by multiplying the vertices of the two polytopes obtained in previous step. `Extremal_points.ipynb` performs this task. 
