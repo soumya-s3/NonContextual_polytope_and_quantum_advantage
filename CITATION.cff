@@ -8,21 +8,3 @@ message: >-
   If you use this software, please cite it using the
   metadata from this file.
 type: software
-authors:
-  - given-names: 'Soumyabrata '
-    family-names: Hazra
-    affiliation: >-
-      International Institute of Information Technology,
-      Hyderabad
-    email: soumyabrata.hazra@research.iiit.ac.in
-  - given-names: 'Debashis '
-    family-names: Saha
-    orcid: 'https://orcid.org/0000-0003-4525-0903'
-repository-code: >-
-  https://github.com/soumya-s3/NonContextual_polytope_and_quantum_advantage
-references:
-  - authors:
-      - given-names: 'Anubhav'
-        family-names: Chaturvedi
-    title: "https://quantum-journal.org/papers/q-2021-06-29-484/pdf/"
-    type: article
